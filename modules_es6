@@ -1,0 +1,45 @@
+Export
+
+1. Named exports
+
+export var a = 12;
+
+export function add(a ,b) {
+    return a + b;
+}
+
+2. Default exports (one / module)
+
+export default function func() {
+    console.log("export test")
+}
+
+3. Destructured named export
+
+var a = 12;
+var b = function() {
+    return "export"
+}
+
+export { a, b }
+
+export {a as variableOne, export b as functionOne }
+
+4. Export all
+
+export * from ...
+
+
+Import
+
+1. import a from ../script/name 
+
+2. import a as variableOne from ...
+
+3. import { a as ..., b as ...} from ...
+
+4. import * from .... (it is imported as an object)
+
+named + default import
+
+import defaultImp, {varOne, varTww} from ...
